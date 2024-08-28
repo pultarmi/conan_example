@@ -1,0 +1,2 @@
+# python 3.12.4, but any version will likely work
+conan==2.6.0 # any version>2, <3 will likely work

@@ -2,7 +2,5 @@
 nlohmann_json/3.11.3
 
 [generators]
-cmake
-
-[options]
-fmt:header_only=True
+CMakeToolchain
+CMakeDeps
