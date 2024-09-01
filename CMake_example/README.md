@@ -1,4 +1,13 @@
-`conanfile.txt` is an easy way to consume a package. Creation of a package is not supported.
+### CMake example
 
-1) `conan install . --output-folder=build --build=missing`
-2) `cmake .. -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release`
+Using `conanfile.txt` is the preferred way of consuming a package.
+
+```bash
+# install conan dependencies and build if any necessary
+conan install . --output-folder=build --build=missing
+
+cd build
+
+# build the project in Release mode. CMake toolchain file was generated in previous step
+cmake .. -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release
+```
