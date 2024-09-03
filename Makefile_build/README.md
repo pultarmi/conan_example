@@ -11,5 +11,5 @@ conan install --requires=nlohmann_json/3.11.3@ -b=missing --deployer=full_deploy
 # Makefile is already adjusted to include this path
 
 # now build the project
-make
+make -j
 ```

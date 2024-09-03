@@ -10,4 +10,5 @@ cd build
 
 # build the project in Release mode. CMake toolchain file was generated in previous step
 cmake .. -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release
+make -j
 ```
